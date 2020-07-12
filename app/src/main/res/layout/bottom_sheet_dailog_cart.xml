@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:id="@+id/bottomsheet_cart"
+    android:padding="20dp"
+    android:layout_gravity="bottom"
+
+    android:fitsSystemWindows="false"
+    android:background="@drawable/bottom_sheet"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/fab_transformation_sheet_behavior"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageCart"
+            android:src="@drawable/giftcard"
+            android:layout_width="150dp"
+            android:layout_height="180dp"/>
+        <TextView
+            android:id="@+id/tectViewCartPrice"
+            android:text="BDT 250"
+           android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/imageCart"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewCartName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tectViewCartPrice"
+            android:layout_toRightOf="@id/imageCart"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Name: Golposomogro"
+
+            android:textColor="#000"
+            android:textSize="17.5dp" />
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:text="Category: Novel"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@id/imageCart"
+            android:layout_below="@id/textViewCartName"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:textSize="17.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textViewCartDetails"
+        android:text="@string/desc"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Quentity"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Only 1 item left"
+                android:layout_gravity="center"
+
+                android:textSize="19sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent">
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/myButton"
+                android:layout_width="90dp"
+                app:textSize="7sp"
+                app:initialNumber="1"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_weight="1.75" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:textSize="25sp"
+        android:layout_gravity="bottom"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Add To Cart"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

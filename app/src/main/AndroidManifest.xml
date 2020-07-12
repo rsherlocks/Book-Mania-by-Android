@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidshaper.book_sell">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+       android:icon="@drawable/bookicon"
+        
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bookicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="icon,roundIcon"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".CetagoryProductActivity"></activity>
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".sampledata.PayProceessActivity" />
+        <activity
+            android:name=".sampledata.BuyActivityNew"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BuyActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".PdfShow" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

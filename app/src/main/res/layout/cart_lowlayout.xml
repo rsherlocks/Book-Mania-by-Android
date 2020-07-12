@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:id="@+id/linearLayoutCartProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageViewCartProduct"
+                    android:src="@drawable/contact"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:id="@+id/textViewCartProductName"
+                    android:layout_toRightOf="@+id/imageViewCartProduct"
+                    android:text="Hirer Angti."
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewCartProductPrice"
+                    android:layout_toRightOf="@+id/imageViewCartProduct"
+                    android:layout_below="@+id/textViewCartProductName"
+                    android:layout_marginTop="10dp"
+                    android:text="BDT 250"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#91062D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewCartProductQuentity"
+                    android:layout_toRightOf="@+id/imageViewCartProduct"
+                    android:layout_below="@+id/textViewCartProductPrice"
+                    android:layout_marginTop="10dp"
+                    android:text="Qty: 2"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <EditText
+                android:id="@+id/editTextCartVoucher"
+                android:background="@drawable/round_edittext"
+                android:hint="Enter Voucher Code"
+                android:paddingLeft="5dp"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"/>
+            <Button
+                android:id="@+id/buttonCartVoucher"
+                android:text="Apply"
+                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#CDCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

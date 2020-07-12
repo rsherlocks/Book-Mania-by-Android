@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbarcheckout"
+       app:title="Checkout"
+       android:background="#F4F4F4"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <LinearLayout
+       android:weightSum="17"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_weight="15"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:background="#fff"
+
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <LinearLayout
+
+                      android:id="@+id/checkoutEditAdress"
+                      android:orientation="vertical"
+                      android:weightSum="5"
+                      android:padding="10dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+
+
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:id="@+id/checkoutPersonName"
+                              android:layout_weight="4"
+                              android:hint="Name"
+                              android:textColor="#000"
+
+                              android:textStyle="bold"
+                              android:textSize="20.5dp"
+                              android:drawablePadding="15dp"
+                              android:drawableLeft="@drawable/ic_baseline_place_24"
+                              android:layout_width="250dp"
+                              android:layout_height="wrap_content"/>
+                          <TextView
+                              android:text="EDIT"
+                              android:textSize="20.5dp"
+                              android:textAlignment="center"
+                              android:layout_weight="1"
+                              android:textColor="#33d"
+
+
+                              android:layout_gravity="right"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:gravity="center_horizontal" />
+
+                      </LinearLayout>
+
+                      <TextView
+                          android:id="@+id/checkoutPersonAdress"
+                          android:layout_marginTop="20dp"
+                          android:textColor="#000"
+                          android:drawablePadding="15dp"
+                          android:textSize="20dp"
+                          android:hint="Address"
+                          android:drawableTintMode="screen"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:drawableLeft="@drawable/ic_baseline_home_24" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <View
+                          android:background="#F3F3F3"
+                          android:layout_width="match_parent"
+                          android:layout_height="10dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:padding="10dp"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <LinearLayout
+                          android:id="@+id/checkoutBill"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:textSize="20dp"
+                              android:text="Bill to the same address"
+                              android:drawablePadding="15dp"
+                              android:textStyle="bold"
+                              android:textColor="#000"
+                              android:layout_weight="4"
+                              android:layout_width="250dp"
+                              android:layout_height="wrap_content"
+                              android:drawableLeft="@drawable/ic_baseline_account_box_24" />
+                          <TextView
+                              android:textSize="20.5dp"
+                              android:text="SAVE"
+                              android:textColor="#33d"
+                              android:textAlignment="center"
+                              android:layout_weight="1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_horizontal" />
+
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <LinearLayout
+                              android:orientation="horizontal"
+                              android:weightSum="5"
+                              android:layout_width="match_parent"
+                              android:layout_height="50dp">
+                              <ImageView
+                                  android:layout_weight="1"
+                                  android:src="@drawable/ic_baseline_call_24"
+                                  android:layout_width="35dp"
+                                  android:layout_height="match_parent"/>
+                              <EditText
+                                  android:id="@+id/chekoutPhn"
+                                  android:hint="Phone"
+                                  android:textSize="20dp"
+                                  android:layout_weight="4"
+                                  android:padding="10dp"
+                                  android:layout_margin="5dp"
+                                  android:background="@drawable/round_edittext"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"/>
+
+
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                          </LinearLayout>
+
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_marginTop="15dp"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="50dp">
+                          <LinearLayout
+                              android:orientation="horizontal"
+                              android:weightSum="5"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                              <ImageView
+                                  android:layout_weight="1"
+                                  android:src="@drawable/ic_baseline_email_24"
+                                  android:layout_width="35dp"
+                                  android:layout_height="match_parent"/>
+                              <EditText
+                                  android:id="@+id/checkoutEmail"
+                                  android:hint="Email (Optional)"
+                                  android:layout_weight="4"
+                                  android:padding="10dp"
+                                  android:textSize="20dp"
+                                  android:layout_margin="5dp"
+                                  android:background="@drawable/round_edittext"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"/>
+
+
+                          </LinearLayout>
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                          </LinearLayout>
+
+                      </LinearLayout>
+
+                  </LinearLayout>
+                  <View
+                      android:layout_marginTop="10dp"
+                      android:background="#F4F2F2"
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"/>
+                  <LinearLayout
+                      android:padding="10dp"
+                      android:layout_marginBottom="20dp"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <TextView
+                          android:textSize="20dp"
+                          android:text="Delivery Option"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+                      <LinearLayout
+                          android:padding="10dp"
+                          android:orientation="vertical"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="250dp"
+                          android:background="@drawable/layout_rounded"
+                          android:layout_height="150dp">
+                          <LinearLayout
+
+                              android:orientation="horizontal"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content">
+                              <ImageView
+                                  android:src="@drawable/ic_baseline_check_circle_24"
+                                  android:layout_width="35dp"
+                                  android:layout_height="35dp"/>
+                              <TextView
+                                  android:layout_marginLeft="10dp"
+                                  android:textAlignment="center"
+                                  android:text="BDT 55"
+                                  android:textSize="20dp"
+                                  android:textColor="#000"
+                                  android:textStyle="bold"
+                                  android:padding="5.5dp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center_horizontal" />
+
+                          </LinearLayout>
+                          <TextView
+                              android:layout_marginTop="10dp"
+                              android:textColor="#000"
+                              android:text="Home Delivery"
+                              android:textSize="17.5dp"
+                              android:layout_marginLeft="50dp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"/>
+                          <TextView
+                              android:layout_marginTop="10dp"
+                              android:text="Est. Arrival:28-30 jun"
+                              android:textSize="17.5dp"
+                              android:layout_marginLeft="50dp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"/>
+
+
+
+                      </LinearLayout>
+
+
+                  </LinearLayout>
+                  <View
+                      android:layout_marginTop="10dp"
+                      android:background="#F4F2F2"
+                      android:layout_width="match_parent"
+                      android:layout_height="5dp"/>
+                  <LinearLayout
+                      android:layout_marginBottom="30dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <RelativeLayout
+                          android:padding="20dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent">
+                          <ImageView
+                              android:id="@+id/image_checkout"
+                              android:src="@drawable/shop"
+                              android:layout_width="150dp"
+                              android:layout_height="100dp"/>
+                          <TextView
+                              android:id="@+id/checkoutProductName"
+                              android:layout_marginLeft="10dp"
+                              android:text="Name"
+
+                              android:textSize="20dp"
+                              android:layout_toRightOf="@+id/image_checkout"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+                          <TextView
+                              android:id="@+id/checkoutPoductPrice"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="10dp"
+                              android:text="BDT 250"
+                              android:layout_below="@+id/checkoutProductName"
+                              android:textColor="#E8110C"
+                              android:textSize="20dp"
+
+                              android:layout_toRightOf="@+id/image_checkout"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+                          <TextView
+                              android:id="@+id/checkoutProductQuentity"
+                              android:layout_below="@+id/checkoutPoductPrice"
+                              android:text="Qty: 1"
+                              android:textColor="#000"
+                              android:textSize="20dp"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="10dp"
+                              android:layout_toRightOf="@+id/image_checkout"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"/>
+                      </RelativeLayout>
+                  </LinearLayout>
+
+              </LinearLayout>
+          </ScrollView>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="2"
+           android:background="#F3E7D1"
+
+           android:layout_width="match_parent"
+           android:layout_height="65dp">
+           <LinearLayout
+               android:weightSum="5"
+               android:padding="5dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                   android:layout_weight="3"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:text="Total: "
+                           android:textSize="20dp"
+                           android:textColor="#000"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                       <TextView
+                           android:id="@+id/textViewBuyTotal"
+                           android:text="BDT 150"
+                           android:textSize="20dp"
+                           android:textColor="#CD0C08"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+
+                   </LinearLayout>
+                   <TextView
+                       android:text="Vat included, where applicable"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_weight="2"
+                  android:gravity="right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent">
+                   <Button
+                       android:id="@+id/buttonBuyProccess"
+                       android:text="Proceed to Pay"
+                       android:padding="10dp"
+                       android:textColor="#fff"
+
+                       android:background="@drawable/round_button"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"/>
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</LinearLayout>

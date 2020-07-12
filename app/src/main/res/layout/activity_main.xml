@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_above="@+id/bottomBarId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarMainActivity"
+                android:background="#F6F5F5"
+                app:title="Book Mania"
+                app:menu="@menu/mainactivity_menu"
+                app:titleTextColor="#00897B"
+                app:subtitle="By AndroidShaper"
+                app:subtitleTextColor="#00ACC1"
+                app:titleMarginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <FrameLayout
+                android:background="#ffff"
+                android:id="@+id/frameViewId"
+                android:layout_below="@+id/toolbarMainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBarId"
+        android:layout_alignParentBottom="true"
+        android:background="#F6F5F5"
+        android:layout_width="match_parent"
+        app:menu="@menu/bottom_navigation_item"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
